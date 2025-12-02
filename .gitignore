@@ -1,0 +1,24 @@
+```
+# CMake build artifacts
+build/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+*.cmake
+*.log
+*.o
+*.out
+*.bin
+
+# Compiled executable
+openvpn_cpp
+
+# Configuration and sample files
+auth.txt
+sample.ovpn
+
+# Source files (preserve these)
+main.cpp
+README.md
+```

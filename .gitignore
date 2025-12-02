@@ -1,24 +1,48 @@
 ```
-# CMake build artifacts
-build/
-CMakeCache.txt
-CMakeFiles/
-Makefile
-cmake_install.cmake
-*.cmake
-*.log
+# Compiled and build artifacts
 *.o
+*.obj
+*.a
+*.so
+*.dll
+*.exe
 *.out
-*.bin
 
-# Compiled executable
-openvpn_cpp
+# Dependencies
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Configuration and sample files
-auth.txt
-sample.ovpn
+# Build directories
+build/
+dist/
+target/
+*.class
 
-# Source files (preserve these)
-main.cpp
-README.md
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
 ```

@@ -5,8 +5,16 @@ set(CMAKE_CXX_STANDARD 17)
 
 find_package(OpenSSL REQUIRED)
 
-add_executable(openvpn_cpp main.cpp)
+# Collect all source files
+file(GLOB SOURCES "src/*.cpp")
 
+# Create the executable
+add_executable(openvpn_cpp ${SOURCES})
+
+# Include directories
+target_include_directories(openvpn_cpp PRIVATE include)
+
+# Link libraries
 target_link_libraries(openvpn_cpp OpenSSL::SSL OpenSSL::Crypto)
 
 target_compile_options(openvpn_cpp PRIVATE -Wall -Wextra)

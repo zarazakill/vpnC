@@ -52,6 +52,8 @@ private:
     ConnectionConfig connection_;
     std::map<std::string, std::string> options_;
 
+    void parseConfigLine(const std::string& line);
+
 public:
     OpenVPNConfig();
     bool loadFromFile(const std::string& filename);

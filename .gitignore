@@ -1,6 +1,16 @@
-```
-# Build artifacts
+# CMake build artifacts
 build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+*.ninja
+.ninja_deps
+.ninja_log
+compile_commands.json
+
+# Build outputs
 dist/
 *.o
 *.obj
@@ -9,42 +19,170 @@ dist/
 *.so
 *.a
 *.out
+*.lib
+*.dylib
+
+# Debug files
+*.pdb
+*.idb
+*.ilk
+
+# Executable
+openvpn_cpp
+openvpn-client
+OpenVPNClient
 
 # Dependencies
+deps/
+third_party/
 venv/
 .venv/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-
-# CMake
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-*.cmake
+.env/
+node_modules/
+vendor/
 
 # Logs and temp files
 *.log
+*.bin
 *.tmp
 *.swp
+*.swo
+*~
+*.cache
+.cache/
 
 # Editors
 .vscode/
 .idea/
+.vs/
+*.swp
+*.swo
+*~
+.DS_Store
 
 # Environment
 .env
 .env.local
+.env.*.local
 *.env.*
+.envrc
 
-# Coverage
+# Configuration and sample files with credentials
+auth.txt
+*.secret
+*.key
+*.pem
+private.*
+sample.ovpn
+config/local.*
+
+# Test and coverage
 coverage/
 htmlcov/
 .coverage
+*.gcno
+*.gcda
+*.gcov
+test-results/
+*.test
+*.profraw
 
-# OS
+# Documentation
+docs/_build/
+docs/source/_build/
+*.chm
+*.doc
+*.pdf
+
+# Package management
+conaninfo.txt
+conanbuildinfo.cmake
+conan.lock
+Cargo.lock
+go.mod
+go.sum
+package-lock.json
+yarn.lock
+composer.lock
+Pipfile.lock
+poetry.lock
+requirements*.txt
+
+# OS specific
 .DS_Store
 Thumbs.db
-```
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.temp
+
+# IDE specific
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
+*.sdf
+*.opensdf
+
+# Qt
+*.pro.user
+*.autosave
+
+# CLion
+cmake-build-*/
+out/
+*.iml
+.idea_modules/
+
+# Visual Studio Code
+.settings/
+.history/
+*.code-workspace
+
+# Qt Creator
+*.creator
+*.user
+*.files
+*.includes
+*.config
+
+# Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.sdf
+*.opensdf
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+*.xcuserstate
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+project.xcworkspace/
